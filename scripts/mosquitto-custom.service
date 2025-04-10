@@ -1,0 +1,13 @@
+[Unit]
+Description=Custom Mosquitto MQTT Broker with Plugin
+After=network.target
+
+[Service]
+ExecStart=/opt/mosquitto-custom/bin/start-mosquitto.sh
+Restart=always
+User=dgk
+Group=dgk
+Environment=LD_LIBRARY_PATH=/opt/mosquitto-custom/lib
+
+[Install]
+WantedBy=multi-user.target
