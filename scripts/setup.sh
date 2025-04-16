@@ -17,7 +17,7 @@ cd "${PROJECT_DIR}"
 # Install dependencies
 echo "🧩 Installing dependencies..."
 sudo apt update
-sudo apt install -y build-essential libc-ares-dev libcjson-dev libwebsockets-dev libssl-dev xsltproc docbook-xsl git libcunit1-dev libargon2-dev cmake pkg-config rsync libbsqlite3-dev
+sudo apt install -y build-essential libc-ares-dev libcjson-dev libwebsockets-dev libssl-dev xsltproc docbook-xsl git libcunit1-dev libargon2-dev cmake pkg-config rsync libsqlite3-dev
 
 # Clone Mosquitto
 echo "🐳 Cloning Mosquitto..."
