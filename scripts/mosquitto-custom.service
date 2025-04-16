@@ -5,8 +5,8 @@ After=network.target
 [Service]
 ExecStart=/opt/mosquitto-custom/bin/start-mosquitto.sh
 Restart=always
-User=dgk
-Group=dgk
+User=mosquitto-custom
+Group=mosquitto-custom
 Environment=LD_LIBRARY_PATH=/opt/mosquitto-custom/lib
 
 [Install]
